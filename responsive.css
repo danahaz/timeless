@@ -1,0 +1,385 @@
+
+@media (max-width: 766px) {
+
+
+#wheel{
+    height: 200px;
+    width: 200px;
+}
+    .wheel-wrapper {
+        width: 250px;  
+        height: 250px;
+      }
+    
+      .arrow {
+        top: 90px;  
+        left: 90%;
+        border-bottom: 20px solid black; 
+      }
+    
+      .spin-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+    
+      .close-button {
+        padding: 8px 15px;
+      }
+    
+      #open-wheel-button {
+        padding: 12px 20px;  
+        font-size: 14px;
+      }
+    .modal-content {
+        width: 90%;
+      }
+    
+      .feedback-nav-buttons {
+        flex-direction: column;
+      }
+    
+      .thank-you-buttons {
+        flex-direction: column;
+      }
+    .bestsellers-title{
+       
+       display: flex !important;
+       justify-content: center;
+   
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+
+.bestseller-item h2{
+   display: none;
+}
+.listing-products{
+   display: flex;
+   flex-direction: column;
+   width: 85%;
+padding: 0%;
+ 
+}
+.bestseller-item{
+   width: auto;
+   margin-bottom: 4%;
+   height: auto;
+}
+.bestseller-item img{
+   width: 100%;
+}
+.bestseller-title1{
+   display: none;
+}
+ 
+ .footerdet{
+    position: relative !important;
+ }
+.catag-title{
+   display: none;
+}
+.bestsellers-title{
+   display: none;
+}
+    .button-container {
+        display: none;
+    }
+    .logo2 {
+        display: flex !important;
+        justify-content:center !important;
+       margin-top: 55px;
+     }
+     .logo2 a {
+        display: flex;            
+        justify-content: center;  
+        align-items: center;    
+        width: 100%;             
+        height: 100%;  
+               
+    }
+  
+    .left-cont, .right-cont {
+        display: none;
+    }
+    .logo2 a img {
+        width: 150px;
+       
+       
+        
+    }
+    .details{
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .guarantee-title{
+        font-size: 2rem;
+    }
+    .quantity-container {
+        gap: 8px;
+      }
+    
+      .quantity-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+      }
+    
+      .quantity-input {
+        width: 50px;
+        height: 35px;
+        font-size: 16px;
+      }
+      .guarantee-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .guarantee-item {
+        width: 280px;
+      }
+    .logo2 img {
+        width: 150px;
+        height: 40px;
+       
+        
+    }
+    .containerdet{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+ .product{
+    flex-direction: column;
+    align-items: center;
+ }
+ .image-containerdet{
+    width: 300px;
+    height: 200px;
+    align-items: center;
+ }
+  
+
+ 
+    .slogan {
+        font-size: 80%;
+    }
+    .collection-row{ display: flex;
+        flex-direction: column;
+ 
+    }
+    .collection-item.small,.collection-item.large,.collection-item.full{
+        width: 100%;
+    }
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .footer-info {
+        text-align: center;
+    }
+    .button-container {
+        display: none;          
+    }
+   
+    .left-cont {
+    display: none;
+    align-items: center;
+    height: 50px;
+    margin-right: 250px;
+}
+.logo {
+    display: flex;
+        position:absolute;
+     
+        transform: none;
+    margin-right: 4.2%;
+    margin-bottom: 4%;
+    margin-top: 0.5%;
+    }
+    .logo img {
+    width: 30%;
+    height: 30%;
+   
+}
+.categories{
+    display: none;
+}
+    
+ 
+    header{
+        position: fixed;
+        background-color: white;
+        height: 80px;
+    }
+.right-cont {
+    display: none;
+   
+}
+ 
+ 
+.slogan{
+font-size: 80%;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0;
+    padding: 0%;
+    font-size: smaller;
+    margin-top: 10px;
+}
+.search-icon{
+    margin-top: 4px;
+    margin-left: 0;
+    margin-right: 0;
+   display: none;
+
+}
+.search-bar2{
+    width: 94px;
+}
+.search-bar {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 80%;
+   margin-top: 1.70%;
+   align-items: center;
+   
+    display:flex;
+   
+}
+
+.catagories{
+    margin-top: 30%;
+}
+
+.footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .footer-info {
+        text-align: center;
+    }
+  .photo-button{
+    font-size: 2vw;
+    padding: 8px 8px;
+  }
+.text-wrapper{
+    font-size: 3vw;
+}
+    .catagory-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .catagory-element{
+        margin-bottom: 15%;
+    }
+    .catagory-img {
+        width: 100%;
+ 
+    }
+   .container{
+    padding: 15px;
+    margin-top: 90px;
+   }
+    .col{
+        max-width: 100%;
+    }
+    .text-center{
+        display: none;
+    }
+    .collections-title{
+        align-items: center;
+       
+    }
+    .catag-title{
+       
+        display: flex !important;
+        justify-content: center;
+     
+    text-align: center;
+    margin-bottom: 30px;
+ 
+    }
+.menu-button{
+    display: block !important;
+}
+ 
+.input-bar {
+    width: 150px;
+  }
+  .search-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin-right: 20px;
+      margin-top: 17px;
+  }
+}
+@media (max-width: 1024px) {
+ 
+    .search-container2{
+     left: 1%;
+     
+     
+    }
+ .right-cont{
+    margin-right: 5%;
+ }
+ .left-cont{
+    margin-left: 5%;
+ }
+    .container {
+        flex-direction: column;
+    }
+ 
+    .box {
+        background-color: lightgray;
+    }
+ .logo2{
+    display: flex !important;
+    justify-content: start !important;
+   
+ }
+   
+    .logo2 a {
+        display: flex !important;            
+        justify-content: start !important;  
+       
+    }
+ 
+ .logo2 img{
+    
+    height: 100%;
+ }
+ 
+
+.menu-display{
+    display: none;
+}
+}
+@media screen and (min-width: 766px) and (max-width: 900px) {
+    .footerdet{
+      
+        bottom: 0;
+     }
+}
+
+@media (min-width: 1025px) {
+
+    .footerdet{
+        position: relative;
+    }
+}

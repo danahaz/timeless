@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless Jewelry Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="subpages.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <header>
+    <div class="slogan">
+        <p>Jewelry beyond time</p>
+    </div>
+    <div class="header-content">
+       
+       
+        <div class="left-cont">
+            <div class="contact">
+                <div class="contact-icon" onclick="openContactForm()">
+                    
+                
+                        <i class="bi bi-envelope-heart " ></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                          </svg>
+                    
+                </div>
+            </div>
+        
+           
+ 
+  <div id="contact-modal" class="contact-modal">
+    <div class="contact-modal-content">
+    <span class="close" onclick="document.getElementById('contact-modal').style.display='none'">&times;</span>
+      <h2>Contact Us</h2>
+    
+    
+      <form id="contact-form" onsubmit="handleFormSubmit(event)">
+          <label class="labelcontact" for="first-name">First Name:</label>
+          <input class="form-input-con" type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+    
+          <label class="labelcontact" for="last-name">Last Name:</label>
+          <input class="form-input-con" type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+    
+          <label class="labelcontact" for="email">Email:</label>
+          <input class="form-input-con" type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+          <label class="labelcontact" for="phone">Phone Number:</label>
+          <input class="form-input-con" type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+          <label class="labelcontact" for="message">Message:</label>
+          <textarea class="contact-textarea" id="message" name="message" placeholder="Enter your message" required></textarea>
+    
+          <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    
+    
+      <div id="thank-you-message" class="thank-you-message" style="display: none;">
+          <h3>Thank you for contacting us!</h3>
+          <p>We will get back to you soon.</p>
+          <button class="back-to-home-btn-cn" onclick="goBackToHome()">Back to Home</button>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+       
+    
+            <div class="location">
+                <div class="location-icon" onclick="document.getElementById('overlay').style.display='block'"> 
+                    <i class="bi bi-geo-alt "></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                </div>
+            </div>
+       
+            <div id="overlay" class="overlay">
+                <div class="overlay-content">
+                    <span class="close" onclick="document.getElementById('overlay').style.display='none'">&times;</span>
+                    <h2>Find the Perfect Piece at Timeless! Your Destination for Elegance.</h2>
+                    <div class="image-container">
+                        <div class="image-item">
+                            <img src="photos/zahle.png" alt="Image 1">
+                            <p>⚲ Zahle-Lebanon</p>
+
+                          
+                            <p>⤷ Fakhr El-Dine Street</p>
+                      
+                            <p>🕻 Tel: +961 8 *** ***</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="photos/batroun.jpg" alt="Image 2">
+                            <p>⚲ Batroun-Lebanon</p>
+                     
+                            <p>⤷ Al-Mina Street</p>
+                      
+                            <p>🕻 Tel: +961 6 *** ***</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="photos/beirut.jpg" alt="Image 3">
+                            <p>⚲ Beirut-Lebanon</p>
+                            
+                            <p>⤷ ABC Mall-Achrafieh</p>
+                         
+                            <p>🕻 Tel: +961 1 *** ***</p>
+                        </div>
+                    </div>
+                    <h2 style="margin-bottom: 0;margin-top: 2vw;">♡ Just one visit away from perfection ♡</h2>
+                </div>
+            </div> 
+        </div>
+       
+    
+        <div class="logo2">
+          <a href="homepage.html">
+              <img src="photos/logo.png" alt="Logo">
+          </a>
+      </div>
+        <div class="right-cont">
+     
+        <div class="search-container2">
+              <div class="search-icon2">
+                <i class="bi bi-search"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                  
+               </div>
+            <input type="text" class="search-bar2" placeholder="Search products..." onkeyup="searchWebsite()">
+            <div id="searchResults"></div>
+        </div>
+   
+          
+      
+      <div class="user">
+        <label for="modal-toggle" class="user-icon" onclick="openModal()">
+            <i class="bi bi-person"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+              </svg>
+        </label>
+      </div>
+      
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+      
+         
+          <div class="form-container" id="sign-up-form">
+            <h2>Sign Up</h2>
+            <form  >
+              <input class="form-input-l" type="text" name="username" placeholder="Username" required><br>
+              <input class="form-input-l" type="email" name="email" placeholder="Email" required><br>
+              <div class="password-container">
+                <input class="form-input-l" type="password" name="password" id="passwordsi" placeholder="Password" required>
+                <button  type="button" id="toggleSignUpPassword" class="password-toggle" onclick="togglePasswordsi()"> <img src="photos/close.png" alt="Toggle password visibility" style="width: 20px; height: 12px;"></button>
+              </div>
+              <button class="form-button-l" type="submit" class="pink">Sign Up</button>
+            </form>
+            <p>Already have an account? <button  class="form-button-lo" onclick="switchToLogin()">Log In</button></p>
+          </div>
+      
+        
+          <div class="form-container" id="log-in-form" style="display:none;">
+            <h2>Log In</h2>
+            <form  >
+              <input class="form-input-l" type="email" name="email" placeholder="Email" required><br>
+              <div class="password-container">
+                <input class="form-input-l" type="password" name="password" id="passwordlog" placeholder="Password" required>
+                <button class="form-button-p"  type="button" id="toggleLoginPassword" class="password-toggle" onclick="togglePasswordlog()"><img src="photos/close.png" alt="Toggle password visibility" style="width: 20px; height: 12px;"></button>
+              </div>
+              <button class="form-button-l" type="submit" class="pink">Log In</button>
+            </form>
+            <p>Don't have an account? <button  class="form-button-lo" onclick="switchToSignUp()">Sign Up</button></p>
+          </div>
+      
+             </div>
+          </div>
+      
+           
+            <div class="cart">
+                <div class="cart-icon">
+                    <i class="bi bi-bag-heart "></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+       
+   
+        
+        <div class="button-container">
+            <a href="#feedback" class="button-fe" onclick="openFeedbackForm(event)">Feedback</a>
+          </div>
+         
+<div class="feedback-modal" id="feedbackForm">
+<div class="feedback-overlay" onclick="closeFeedbackForm()"></div>
+<div class="feedback-container">
+<span id="closebtn" class="close" onclick="closeFeedbackForm()">&times;</span>
+<h2>We value your feedback!</h2>
+
+
+<div class="feedback-tab-buttons" id="feedback-tab-buttons">
+
+  <button class="feedback-tab-button" onclick="showTab('thankYou')" style="display:none;">Thank You</button>
+</div>
+
+<div class="feedback-tab-content">
+
+  <div id="feedback-category" class="feedback-tab-pane active">
+    <div class="feedback-category-prompt">
+      <p>Would you like to leave feedback about Jewelry?</p>
+      <a href="#" onclick="loadFeedbackForm('jewelry')">Leave your feedback about Jewelry here</a>
+    </div>
+    <div class="feedback-category-prompt">
+      <p>Would you like to leave feedback about Accessories?</p>
+      <a href="#" onclick="loadFeedbackForm('accessories')">Leave your feedback about Accessories here</a>
+    </div>
+    <div class="feedback-category-prompt">
+      <p>Would you like to leave feedback about Customer Service?</p>
+      <a href="#" onclick="loadFeedbackForm('service')">Leave your feedback about Customer Service here</a>
+    </div>
+  </div>
+
+  <div id="feedback-form" class="feedback-tab-pane">
+   
+    <div id="jewelry-form" class="feedback-category-form" style="display:none;">
+      <h3>Jewelry Feedback</h3>
+      <label class="label-fb" for="jewelry-quality">What do you think of the quality of the jewelry?</label>
+      <textarea class="textarea-fb" id="jewelry-quality" placeholder="Your feedback..."></textarea>
+      <br>
+      <label class="label-fb" for="jewelry-taste">Did the jewelry fit your taste?</label>
+      <br>
+      <input type="radio" name="jewelry-taste" value="Yes"> Yes
+      <input type="radio" name="jewelry-taste" value="No"> No
+      <br>
+      <label class="label-fb" for="jewelry-condition">Was the jewelry in good condition?</label>
+      <br>
+      <input type="radio" name="jewelry-condition" value="Yes"> Yes
+      <input type="radio" name="jewelry-condition" value="No"> No
+      <br>
+      <label class="label-fb" for="jewelry-style">Do you like the style of the jewelry?</label>
+      <br>
+      <input type="radio" name="jewelry-style" value="Yes"> Yes
+      <input type="radio" name="jewelry-style" value="No"> No
+      <br>
+      <label class="label-fb" for="jewelry-variety">How would you rate the variety of jewelry?</label>
+      <br>
+      <select id="jewelry-variety">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    
+    <div id="accessories-form" class="feedback-category-form" style="display:none;">
+      <h3>Accessories Feedback</h3>
+      <label class="label-fb" for="accessories-quality">How satisfied are you with the quality of the accessories?</label>
+      <textarea class="textarea-fb" id="accessories-quality" placeholder="Your feedback..."></textarea>
+<br>
+      <label class="label-fb" for="accessories-recommend">Would you recommend our accessories to others?</label>
+      <br>
+      <input type="radio" name="accessories-recommend" value="Yes"> Yes
+      <input type="radio" name="accessories-recommend" value="No"> No
+      <br>
+      <label class="label-fb" for="accessories-functionality">Do the accessories serve their intended function well?</label>
+      <br>
+      <input type="radio" name="accessories-functionality" value="Yes"> Yes
+      <input type="radio" name="accessories-functionality" value="No"> No
+      <br>
+      <label class="label-fb" for="accessories-design">How would you rate the design of our accessories?</label>
+      <br>
+      <select id="accessories-design">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br>
+      <label class="label-fb" for="accessories-value">How would you rate the value for money of our accessories?</label>
+      <br>
+      <select id="accessories-value">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+    </div>
+
+
+    <div id="service-form" class="feedback-category-form" style="display:none;">
+      <h3>Customer Service Feedback</h3>
+      <label class="label-fb" for="service-experience">How was your experience with our customer service?</label>
+      <textarea class="textarea-fb" id="service-experience" placeholder="Your feedback..."></textarea>
+      <br>
+      <label class="label-fb" for="service-assistance">Did you experience any difficulty during checkout?</label>
+     <br>
+      <input  type="radio" name="service-assistance" value="Yes"> Yes
+      <input type="radio" name="service-assistance" value="No"> No
+      <label class="label-fb" for="service-help">Did you find the website’s help section or FAQs useful?</label>
+      <br>
+      <input type="radio" name="service-help" value="Yes"> Yes
+      <input type="radio" name="service-help" value="No"> No
+    </div>
+
+ 
+    <div class="feedback-nav-buttons">
+      <button type="button" id="back-feedback-btn" onclick="backToCategory()" style="display:none;">Back</button>
+      <button type="button" id="submit-feedback-btn" onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+  </div>
+
+
+  <div id="thankYou" class="feedback-tab-pane">
+    <h2>Thank you for your feedback!</h2>
+    <a href="homepage.html" class="feedback-back-to-home-btn">Back to Home</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+   
+<div class="categories">
+<a href="charms.html" >Charms</a>
+<a href="earrings.html">Earrings</a>
+<a href="necklaces.html">Necklaces</a>
+<a href="bracelets.html">Bracelets</a>
+<a href="rings.html">Rings</a>
+<a href="watches.html">Watches</a>
+</div>
+
+  
+<div class="search-container">
+  <div class="search-icon">
+    <i class="bi bi-search"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg>
+      
+   </div>
+<input type="text" class="search-bar2" placeholder="Search products..." onkeyup="searchWebsite()">
+<div id="searchResults"></div>
+</div>
+     
+ 
+         
+          <button class="menu-button" onclick="toggleMenu()">☰</button>
+         
+          <div class="menu" id="menu">
+             
+              <a href="contact.html">✧Contact</a>
+   
+             <a href="location.html">✧Location</a>
+                
+                
+              <a href="profile.html" >✧Profile</a>
+           
+              <a href="cart.html">✧Cart</a>
+              <a href="#feedback" class="button" onclick="openFeedbackForm(event)">✧feedback</a>
+              <a href="#" onclick="toggleMenu()">Close</a>
+          </div>
+         
+
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('menu');
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            }
+            const triggerIcon = document.getElementById('trigger-icon');
+const inputBar = document.getElementById('input-bar');
+
+
+triggerIcon.addEventListener('click', function() {
+
+inputBar.classList.toggle('show');
+});
+        </script>
+   
+</header>
+  <div class="containerwish">
+    <h1 class="my-4">Your Wishlist</h1>
+
+    <div class="wishlist-container" id="wishlist-container">
+  
+      <h2>Your Wishlist is empty</h2>
+    </div>
+
+  </div>
+ 
+  <script>
+   
+
+   
+    function loadWishlist() {
+      let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+      const wishlistContainer = document.getElementById('wishlist-container');
+      
+      wishlistContainer.innerHTML = '';
+
+      if (wishlist.length === 0) {
+        wishlistContainer.innerHTML = '<h2>Your Wishlist is empty</h2>';
+      } else {
+        wishlist.forEach(item => {
+          const itemDiv = document.createElement('div');
+          itemDiv.className = 'wishlist-item';
+          itemDiv.innerHTML = `
+            <h5>${item.name}</h5>
+            <img src="${item.image}" alt="${item.name}" width="100" />
+            <p>Price: $${item.price}</p>
+            <button class="remove-btn" onclick="removeFromWishlist(${item.id})">Remove</button>
+          `;
+          wishlistContainer.appendChild(itemDiv);
+        });
+      }
+    }
+
+
+    function removeFromWishlist(itemId) {
+      let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+      
+      
+      wishlist = wishlist.filter(item => item.id !== itemId);
+    
+      localStorage.setItem('wishlist', JSON.stringify(wishlist));
+ 
+      loadWishlist();
+    }
+
+  
+    window.onload = loadWishlist;
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

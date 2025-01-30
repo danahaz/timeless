@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeless Jewelry Store</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="slogan">
+        <p>Jewelry beyond time</p>
+    </div>
+    <div class="header-content">
+       
+       
+        <div class="left-cont">
+            <div class="contact">
+                <div class="contact-icon" onclick="openContactForm()">
+                    
+                
+                        <i class="bi bi-envelope-heart " ></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                          </svg>
+                    
+                </div>
+            </div>
+        
+           
+ 
+  <div id="contact-modal" class="contact-modal">
+    <div class="contact-modal-content">
+    <span class="close" onclick="document.getElementById('contact-modal').style.display='none'">&times;</span>
+      <h2>Contact Us</h2>
+    
+    
+      <form id="contact-form" onsubmit="handleFormSubmit(event)">
+          <label class="labelcontact" for="first-name">First Name:</label>
+          <input class="form-input-con" type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+    
+          <label class="labelcontact" for="last-name">Last Name:</label>
+          <input class="form-input-con" type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+    
+          <label class="labelcontact" for="email">Email:</label>
+          <input class="form-input-con" type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+          <label class="labelcontact" for="phone">Phone Number:</label>
+          <input class="form-input-con" type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+          <label class="labelcontact" for="message">Message:</label>
+          <textarea class="contact-textarea" id="message" name="message" placeholder="Enter your message" required></textarea>
+    
+          <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    
+    
+      <div id="thank-you-message" class="thank-you-message" style="display: none;">
+          <h3>Thank you for contacting us!</h3>
+          <p>We will get back to you soon.</p>
+          <button class="back-to-home-btn-cn" onclick="goBackToHome()">Back to Home</button>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+       
+    
+            <div class="location">
+                <div class="location-icon" onclick="document.getElementById('overlay').style.display='block'"> 
+                    <i class="bi bi-geo-alt "></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                </div>
+            </div>
+       
+            <div id="overlay" class="overlay">
+                <div class="overlay-content">
+                    <span class="close" onclick="document.getElementById('overlay').style.display='none'">&times;</span>
+                    <h2>Find the Perfect Piece at Timeless! Your Destination for Elegance.</h2>
+                    <div class="image-container">
+                        <div class="image-item">
+                            <img src="photos/zahle.png" alt="Image 1">
+                            <p>⚲ Zahle-Lebanon</p>
+
+                          
+                            <p>⤷ Fakhr El-Dine Street</p>
+                      
+                            <p>🕻 Tel: +961 8 *** ***</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="photos/batroun.jpg" alt="Image 2">
+                            <p>⚲ Batroun-Lebanon</p>
+                     
+                            <p>⤷ Al-Mina Street</p>
+                      
+                            <p>🕻 Tel: +961 6 *** ***</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="photos/beirut.jpg" alt="Image 3">
+                            <p>⚲ Beirut-Lebanon</p>
+                            
+                            <p>⤷ ABC Mall-Achrafieh</p>
+                         
+                            <p>🕻 Tel: +961 1 *** ***</p>
+                        </div>
+                    </div>
+                    <h2 style="margin-bottom: 0;margin-top: 2vw;">♡ Just one visit away from perfection ♡</h2>
+                </div>
+            </div> 
+        </div>
+       
+    
+        <div class="logo2">
+          <a href="homepage.html">
+              <img src="photos/logo.png" alt="Logo">
+          </a>
+      </div>
+        <div class="right-cont">
+     
+        <div class="search-container2">
+              <div class="search-icon2">
+                <i class="bi bi-search"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                  
+               </div>
+            <input type="text" class="search-bar2" placeholder="Search products..." onkeyup="searchWebsite()">
+            <div id="searchResults"></div>
+        </div>
+   
+          
+      
+      <div class="user">
+        <label for="modal-toggle" class="user-icon" onclick="openModal()">
+            <i class="bi bi-person"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+              </svg>
+        </label>
+      </div>
+      
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+      
+         
+          <div class="form-container" id="sign-up-form">
+            <h2>Sign Up</h2>
+            <form  >
+              <input class="form-input-l" type="text" name="username" placeholder="Username" required><br>
+              <input class="form-input-l" type="email" name="email" placeholder="Email" required><br>
+              <div class="password-container">
+                <input class="form-input-l" type="password" name="password" id="passwordsi" placeholder="Password" required>
+                <button  type="button" id="toggleSignUpPassword" class="password-toggle" onclick="togglePasswordsi()"> <img src="photos/close.png" alt="Toggle password visibility" style="width: 20px; height: 12px;"></button>
+              </div>
+              <button class="form-button-l" type="submit" class="pink">Sign Up</button>
+            </form>
+            <p>Already have an account? <button  class="form-button-lo" onclick="switchToLogin()">Log In</button></p>
+          </div>
+      
+        
+          <div class="form-container" id="log-in-form" style="display:none;">
+            <h2>Log In</h2>
+            <form  >
+              <input class="form-input-l" type="email" name="email" placeholder="Email" required><br>
+              <div class="password-container">
+                <input class="form-input-l" type="password" name="password" id="passwordlog" placeholder="Password" required>
+                <button class="form-button-p"  type="button" id="toggleLoginPassword" class="password-toggle" onclick="togglePasswordlog()"><img src="photos/close.png" alt="Toggle password visibility" style="width: 20px; height: 12px;"></button>
+              </div>
+              <button class="form-button-l" type="submit" class="pink">Log In</button>
+            </form>
+            <p>Don't have an account? <button  class="form-button-lo" onclick="switchToSignUp()">Sign Up</button></p>
+          </div>
+      
+             </div>
+          </div>
+      
+            <div class="wishlist">
+              <a href="wishlist.html">
+                <div class="wishlist-icon">
+                    <i class="bi bi-bookmark-heart "></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                      </svg>
+                </div>
+              </a>
+            </div>
+            <div class="cart">
+                <div class="cart-icon">
+                    <i class="bi bi-bag-heart "></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+       
+   
+        
+        <div class="button-container">
+            <a href="#feedback" class="button-fe" onclick="openFeedbackForm(event)">Feedback</a>
+          </div>
+         
+<div class="feedback-modal" id="feedbackForm">
+<div class="feedback-overlay" onclick="closeFeedbackForm()"></div>
+<div class="feedback-container">
+<span id="closebtn" class="close" onclick="closeFeedbackForm()">&times;</span>
+<h2>We value your feedback!</h2>
+
+
+<div class="feedback-tab-buttons" id="feedback-tab-buttons">
+
+  <button class="feedback-tab-button" onclick="showTab('thankYou')" style="display:none;">Thank You</button>
+</div>
+
+<div class="feedback-tab-content">
+
+  <div id="feedback-category" class="feedback-tab-pane active">
+    <div class="feedback-category-prompt">
+      <p>Would you like to leave feedback about Jewelry?</p>
+      <a href="#" onclick="loadFeedbackForm('jewelry')">Leave your feedback about Jewelry here</a>
+    </div>
+    <div class="feedback-category-prompt">
+      <p>Would you like to leave feedback about Accessories?</p>
+      <a href="#" onclick="loadFeedbackForm('accessories')">Leave your feedback about Accessories here</a>
+    </div>
+    <div class="feedback-category-prompt">
+      <p>Would you like to leave feedback about Customer Service?</p>
+      <a href="#" onclick="loadFeedbackForm('service')">Leave your feedback about Customer Service here</a>
+    </div>
+  </div>
+
+  <div id="feedback-form" class="feedback-tab-pane">
+   
+    <div id="jewelry-form" class="feedback-category-form" style="display:none;">
+      <h3>Jewelry Feedback</h3>
+      <label class="label-fb" for="jewelry-quality">What do you think of the quality of the jewelry?</label>
+      <textarea class="textarea-fb" id="jewelry-quality" placeholder="Your feedback..."></textarea>
+      <br>
+      <label class="label-fb" for="jewelry-taste">Did the jewelry fit your taste?</label>
+      <br>
+      <input type="radio" name="jewelry-taste" value="Yes"> Yes
+      <input type="radio" name="jewelry-taste" value="No"> No
+      <br>
+      <label class="label-fb" for="jewelry-condition">Was the jewelry in good condition?</label>
+      <br>
+      <input type="radio" name="jewelry-condition" value="Yes"> Yes
+      <input type="radio" name="jewelry-condition" value="No"> No
+      <br>
+      <label class="label-fb" for="jewelry-style">Do you like the style of the jewelry?</label>
+      <br>
+      <input type="radio" name="jewelry-style" value="Yes"> Yes
+      <input type="radio" name="jewelry-style" value="No"> No
+      <br>
+      <label class="label-fb" for="jewelry-variety">How would you rate the variety of jewelry?</label>
+      <br>
+      <select id="jewelry-variety">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    
+    <div id="accessories-form" class="feedback-category-form" style="display:none;">
+      <h3>Accessories Feedback</h3>
+      <label class="label-fb" for="accessories-quality">How satisfied are you with the quality of the accessories?</label>
+      <textarea class="textarea-fb" id="accessories-quality" placeholder="Your feedback..."></textarea>
+<br>
+      <label class="label-fb" for="accessories-recommend">Would you recommend our accessories to others?</label>
+      <br>
+      <input type="radio" name="accessories-recommend" value="Yes"> Yes
+      <input type="radio" name="accessories-recommend" value="No"> No
+      <br>
+      <label class="label-fb" for="accessories-functionality">Do the accessories serve their intended function well?</label>
+      <br>
+      <input type="radio" name="accessories-functionality" value="Yes"> Yes
+      <input type="radio" name="accessories-functionality" value="No"> No
+      <br>
+      <label class="label-fb" for="accessories-design">How would you rate the design of our accessories?</label>
+      <br>
+      <select id="accessories-design">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br>
+      <label class="label-fb" for="accessories-value">How would you rate the value for money of our accessories?</label>
+      <br>
+      <select id="accessories-value">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+    </div>
+
+
+    <div id="service-form" class="feedback-category-form" style="display:none;">
+      <h3>Customer Service Feedback</h3>
+      <label class="label-fb" for="service-experience">How was your experience with our customer service?</label>
+      <textarea class="textarea-fb" id="service-experience" placeholder="Your feedback..."></textarea>
+      <br>
+      <label class="label-fb" for="service-assistance">Did you experience any difficulty during checkout?</label>
+     <br>
+      <input  type="radio" name="service-assistance" value="Yes"> Yes
+      <input type="radio" name="service-assistance" value="No"> No
+      <label class="label-fb" for="service-help">Did you find the website’s help section or FAQs useful?</label>
+      <br>
+      <input type="radio" name="service-help" value="Yes"> Yes
+      <input type="radio" name="service-help" value="No"> No
+    </div>
+
+ 
+    <div class="feedback-nav-buttons">
+      <button type="button" id="back-feedback-btn" onclick="backToCategory()" style="display:none;">Back</button>
+      <button type="button" id="submit-feedback-btn" onclick="submitFeedback()">Submit Feedback</button>
+    </div>
+  </div>
+
+
+  <div id="thankYou" class="feedback-tab-pane">
+    <h2>Thank you for your feedback!</h2>
+    <a href="homepage.html" class="feedback-back-to-home-btn">Back to Home</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+   
+<div class="categories">
+<a href="charms.html" >Charms</a>
+<a href="earrings.html">Earrings</a>
+<a href="necklaces.html">Necklaces</a>
+<a href="bracelets.html">Bracelets</a>
+<a href="rings.html">Rings</a>
+<a href="watches.html">Watches</a>
+</div>
+
+  
+<div class="search-container">
+  <div class="search-icon">
+    <i class="bi bi-search"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg>
+      
+   </div>
+<input type="text" class="search-bar2" placeholder="Search products..." onkeyup="searchWebsite()">
+<div id="searchResults"></div>
+</div>
+     
+ 
+         
+          <button class="menu-button" onclick="toggleMenu()">☰</button>
+         
+          <div class="menu" id="menu">
+             
+              <a href="contact.html">✧Contact</a>
+   
+             <a href="location.html">✧Location</a>
+                
+                
+              <a href="profile.html" >✧Profile</a>
+              <a href="wishlist.html">✧Wishlist</a>
+              <a href="cart.html">✧Cart</a>
+              <a href="#feedback" class="button" onclick="openFeedbackForm(event)">✧feedback</a>
+              <a href="#" onclick="toggleMenu()">Close</a>
+          </div>
+         
+
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('menu');
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            }
+            const triggerIcon = document.getElementById('trigger-icon');
+const inputBar = document.getElementById('input-bar');
+
+
+triggerIcon.addEventListener('click', function() {
+
+inputBar.classList.toggle('show');
+});
+        </script>
+   
+</header>
+    <div class="containerdet">
+      <div class="product">
+        <div class="image-containerdet">
+          <img id="item-image" src="" alt="Product Image">
+       
+        <div id="color-buttons"></div>
+     
+      </div>
+        <div class="details">
+          <h3 id="item-name"></h3>
+          <p id="item-description"></p>
+          <p id="item-price"></p>
+          <p>Material: <span id="material"></span></p>
+       
+           
+           <div class="btncon">
+            <button class="btnadd">Add to <i class="bi bi-bag"></i><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg></button>
+            <button class="btnadd" onclick="addToWishlist()">Add to ♡</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  <section class="hero-section" style="padding: 2vw;">
+    <img src="photos/adforgifts.png" alt="gifts" class="hero-image">
+
+  </section>
+  <section class="guarantee-section">
+    <div class="container">
+      <h2 class="guarantee-title">Our Commitment to You</h2>
+      <div class="guarantee-items">
+        <div class="guarantee-item">
+          <i class="bi bi-stars"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+          </svg>
+          <h3>Premium Quality</h3>
+          <p>Every piece of jewelry is meticulously crafted to ensure exceptional quality that lasts a lifetime.</p>
+        </div>
+        <div class="guarantee-item">
+          <i class="bi bi-arrow-repeat"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+            <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+          </svg>
+          
+          <h3>Hassle-Free Returns</h3>
+          <p>If you're not completely satisfied, return any item within 30 days for a full refund or exchange.</p>
+        </div>
+        <div class="guarantee-item">
+          <i class="bi bi-truck" style="color: #333;"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="bi bi-truck" viewBox="0 0 16 16">
+            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+          </svg>
+          <h3>Free Global Shipping</h3>
+          <p>Enjoy free shipping worldwide, no matter where you are. Your order will be delivered right to your doorstep.</p>
+        </div>
+        <div class="guarantee-item">
+          <i class="bi bi-chat-heart"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2m-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125M8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+          </svg>
+          <h3>24/7 Support</h3>
+          <p>Our customer support team is available around the clock to help you with any inquiries or concerns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="footer-main">
+   
+        <div class="footer-info">
+            <h4 class="tag-tit">Customer Care</h4>
+            <div class="tags">
+              <a href="privacy.html">Privacy Policy</a>
+          </div>
+            <div class="tags">
+                <a href="shippingpolicy.html">Shipping & Delivery</a>
+            </div>
+            <div class="tags">
+                <a href="exchange.html">Returns & Exchanges</a>
+            </div>
+            <div class="tags">
+                <a href="payment.html">Purchase & Payment</a>
+            </div>
+            <div class="tags">
+                <a href="FAQ.html">FAQs</a>
+            </div>
+        </div>
+     
+        <div class="footer-info">
+            <h4 class="tag-tit">About Timeless Jewelry</h4>
+            <div class="tags">
+                <a href="ourstory.html">Our Story</a>
+            </div>
+            <div class="tags">
+                <a href="location.html">Find a Store</a>
+            </div>
+            <div class="tags">
+                <a href="contact.html">Email Us</a>
+            </div>
+        </div>
+       
+        <div class="footer-info">
+            <h4 class="tag-tit">Stay Connected With Us</h4>
+            <div class="tags">
+                <p>Email: <a href="mailto:clientcare@timelessjewelry.com">clientcare@timelessjewelry.com</a></p>
+            </div>
+            <div class="tags">
+                <p>Call Us: +961 ########</p>
+            </div>
+            <div class="tags">
+                <p>Our Socials:
+                <a href="https://www.instagram.com" target="_blank" class="text-dark mx-3">
+                    <i class="bi bi-instagram" style="font-size: 24px;"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg>
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank" class="text-dark mx-3">
+                    <i class="bi bi-facebook" style="font-size: 24px;"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg>
+                  </a>
+                  <a href="https://www.tiktok.com" target="_blank" class="text-dark mx-3">
+                    <i class="bi bi-tiktok" style="font-size: 24px;"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                      </svg>
+                  </a>
+                  <a href="https://www.twitter.com" target="_blank" class="text-dark mx-3">
+                    <i class="bi bi-twitter-x" style="font-size: 24px;"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                      </svg>
+                  </a></p>
+            </div>
+        </div>
+    </div>
+    <p style="text-align: center;">  © 2024 Timeless All Rights Reserved.</p>
+</section>
+  <script>
+
+
+    const products = {
+      
+61: {
+  name: 'Twisted Bracelet',
+  description: 'A stunning twisted bracelet, designed for modern sophistication and elegance.',
+  price: '$600',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelets 1.png', 
+    silver: 'photos/bracelets 1s.png',
+    'rose-gold': 'photos/bracelets 1r.png',
+  },
+},
+
+62: {
+  name: 'Heart Bracelet',
+  description: 'A beautiful bracelet with a heart design, perfect for expressing love and affection.',
+  price: '$350',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelets 2.png',
+    silver: 'photos/bracelets 2s.png',
+    'rose-gold': 'photos/bracelets 2r.png',
+  },
+},
+
+63: {
+  name: 'Link Bracelet',
+    description: 'A sophisticated link bracelet, adding elegance and style to any outfit.',
+    price: '$700',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelets 3.png', 
+    silver: 'photos/bracelets 3s.png',
+    'rose-gold': 'photos/bracelets 3r.png',
+  },
+},
+
+64: {
+  name: 'Rope Bracelet',
+    description: 'A stunning rope bracelet, adding texture and timeless appeal to your wrist.',
+    price: '$650',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelet 4.png',
+    silver: 'photos/bracelet 4s.png',
+    'rose-gold': 'photos/bracelet 4r.png',
+  },
+},
+
+65: {
+  name: 'Gem Bracelet',
+    description: 'A stunning bangle bracelet adorned with shimmering gems, perfect for any occasion.',
+    price: '$500',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelet 5.png', 
+    silver: 'photos/bracelet 5s.png',
+    'rose-gold': 'photos/bracelet 5r.png',
+  },
+},
+
+66: {
+  name: 'Wrapped Bracelet',
+    description: 'Elegant wrapped bracelet, adding texture and a unique style to your jewelry collection.',
+    price: '$700',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelet 6.png', 
+    silver: 'photos/bracelet 6s.png',
+    'rose-gold': 'photos/bracelet 6r.png',
+  },
+},
+
+67: {
+  name: 'Wave Bracelet',
+    description: 'A delicate bracelet featuring flowing waves, perfect for a chic, modern look.',
+    price: '$850',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelet 7.png', 
+    silver: 'photos/bracelet 7s.png',
+    'rose-gold': 'photos/bracelet 7r.png',
+  },
+},
+
+68: {
+  name: 'Snake Skin Bracelet',
+    description: 'An edgy bracelet designed with a snake-skin texture, perfect for adding a bold statement to your style.',
+    price: '$1,000',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelet 8.png',
+    silver: 'photos/bracelet 8s.png',
+    'rose-gold': 'photos/bracelet 8r.png',
+  },
+},
+
+69: {
+  name: 'Cuff Bracelet',
+    description: 'A versatile adjustable cuff bracelet that can be customized for the perfect fit, ideal for everyday wear.',
+    price: '$550',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelet 9.png',
+    silver: 'photos/bracelet 9s.png',
+    'rose-gold': 'photos/bracelet 9r.png',
+  },
+},
+
+70: {
+  name: 'Diamond Bracelet',
+    description: 'A sparkling bracelet adorned with diamonds, offering a touch of luxury and class.',
+    price: '$400',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelet 10.png', 
+    silver: 'photos/bracelet 10s.png',
+    'rose-gold': 'photos/bracelet 10r.png',
+  },
+},
+
+71: {
+  name: 'Sporty Bracelet',
+    description: 'A trendy multi-link bracelet with a sporty design, perfect for those who love bold, active styles.',
+    price: '$900',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelet 11.png', 
+    silver: 'photos/bracelet 11s.png',
+    'rose-gold': 'photos/bracelet 11r.png',
+  },
+},
+
+72: {
+  name: 'Multi-Link Bracelet',
+    description: 'A sleek multi-link bracelet that blends modern design with timeless elegance.',
+    price: '$900',
+  materials: {
+    gold: '14k yellow gold',
+    silver: '925 sterling silver',
+    'rose-gold': '18k rose gold',
+  },
+  colors: ['gold', 'silver', 'rose-gold'],
+  images: {
+    gold: 'photos/bracelet 12.png', 
+    silver: 'photos/bracelet 12s.png',
+    'rose-gold': 'photos/bracelet 12r.png',
+  },
+}
+
+
+
+
+    };
+
+
+    function getItemIdFromURL() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('item');  
+    }
+
+  
+    function getItemDetails() {
+      const itemId = getItemIdFromURL();
+      if (!itemId || !products[itemId]) {
+        alert('Item not found');
+        return;
+      }
+
+      const product = products[itemId];
+
+     
+      document.getElementById('item-name').textContent = product.name;
+      document.getElementById('item-description').textContent = product.description;
+      document.getElementById('item-price').textContent = product.price;
+
+      const imageElement = document.getElementById('item-image');
+      const materialElement = document.getElementById('material');
+      const colorButtonsContainer = document.getElementById('color-buttons');
+
+      
+      const defaultColor = 'gold'; 
+      imageElement.src = product.images[defaultColor];
+      materialElement.textContent = product.materials[defaultColor];
+
+    
+      product.colors.forEach(color => {
+        const button = document.createElement('button');
+        button.classList.add(color);
+        
+        button.addEventListener('click', function () {
+          imageElement.src = product.images[color]; 
+          materialElement.textContent = product.materials[color]; 
+        });
+        colorButtonsContainer.appendChild(button);
+      });
+    }
+
+   
+    window.onload = getItemDetails;
+ 
+    function addToWishlist() {
+  const itemId = getItemIdFromURL();  
+  const product = products[itemId]; 
+
+  const selectedColor = document.querySelector('.color-btn.selected')?.id || 'gold';  
+  
+ 
+  let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+  const productExists = wishlist.some(item => item.id === product.id && item.color === selectedColor);  
+
+  if (!productExists) {
+    
+    wishlist.push({
+      id: product.id,
+      name: product.name,
+      price: product.price.split('$')[1],
+      image: product.images[selectedColor],  
+      color: selectedColor, 
+    });
+
+    
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+   
+  } else {
+    
+  }
+}
+
+  
+
+
+  </script>
+</body>
+</html>
